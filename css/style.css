@@ -358,3 +358,82 @@ button{border:none;background:none;cursor:pointer;font-family:inherit}
   .s-heading{font-size:clamp(32px,8vw,48px)}
   .map-wrap iframe{height:320px}
 }
+/* ══════════════════════════════════════════════════════════════════
+   CUSTOM OVERRIDE: Memaksa 2 Produk Unggulan Berdampingan di Mobile
+   ══════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+    .featured-scroll {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* Membagi 2 kolom sama rata */
+        gap: 12px !important; /* Memperkecil jarak antar card */
+        overflow-x: hidden !important; /* Matikan scroll horizontal */
+        padding: 32px 15px 12px !important;
+        cursor: default !important;
+    }
+
+    .feat-card {
+        flex: none !important;
+        width: 100% !important; /* Mengikuti lebar grid */
+    }
+
+    /* Penyesuaian ukuran konten agar proporsional saat berdampingan di HP */
+    .feat-img {
+        height: 180px !important; /* Memperkecil tinggi kotak gambar */
+    }
+    
+    .feat-img img {
+        padding: 10px !important; /* Mengurangi padding gambar */
+    }
+
+    .feat-body {
+        padding: 16px !important; /* Memperkecil padding teks di dalam card */
+    }
+
+    .feat-body h3 {
+        font-size: 18px !important; /* Memperkecil ukuran judul produk */
+        margin-bottom: 6px !important;
+    }
+
+    .feat-body p {
+        font-size: 11px !important; /* Memperkecil deskripsi */
+        line-height: 1.5 !important;
+        margin-bottom: 14px !important;
+    }
+
+    .feat-prices {
+        gap: 6px !important;
+    }
+
+    .price-pill {
+        padding: 6px 10px !important;
+        border-radius: var(--r-sm) !important;
+    }
+
+    .price-pill span {
+        font-size: 8px !important;
+    }
+
+    .price-pill strong {
+        font-size: 14px !important; /* Memperkecil font harga */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Optimasi tambahan khusus untuk layar HP yang sangat kecil */
+    .feat-card {
+        flex: none !important;
+        width: 100% !important;
+    }
+
+    .feat-img {
+        height: 140px !important; /* Gambar dibuat lebih ramping lagi */
+    }
+
+    .feat-body h3 {
+        font-size: 15px !important;
+    }
+    
+    .price-pill strong {
+        font-size: 12px !important;
+    }
+}
