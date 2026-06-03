@@ -1,17 +1,6 @@
 'use strict';
 /* ══ main.js ══ */
 
-/* Loader */
-(function(){
-  const lo=document.getElementById('loader');
-  if(!lo)return;
-  const hide=()=>{
-    lo.classList.add('out');
-    document.body.classList.add('loaded');
-    setTimeout(()=>{lo.classList.add('gone'); initHero();},520);
-  };
-  document.readyState==='complete'?setTimeout(hide,1800):window.addEventListener('load',()=>setTimeout(hide,1800));
-})();
 
 function initHero(){
   document.querySelectorAll('#top .rv').forEach(el=>{
