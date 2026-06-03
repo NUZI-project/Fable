@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fable — Short Story Place · Banjaran, Bandung</title>
+  <meta name="description" content="Cozy corner dengan Modern Videotron. Coffee & Pastry. Live Musik & Event di Banjaran, Bandung."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-content">
+    <div class="loader-logo">F</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <p>Short Story Place</p>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- SCROLL PROGRESS -->
+<div id="sp"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-wrap">
+    <a href="#top" class="nav-logo">
+      <div class="nav-logo-img"><img src="assets/logo.jpg" alt="Fable"/></div>
+      <span>FABLE</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Galeri</a></li>
+      <li><a href="#reviews">Ulasan</a></li>
+      <li><a href="#location">Lokasi</a></li>
+    </ul>
+    <a href="https://wa.me/6281385130030" target="_blank" class="nav-cta">
+      <i class="ti ti-brand-whatsapp"></i> Reservasi
+    </a>
+    <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Galeri</a>
+    <a href="#reviews">Ulasan</a>
+    <a href="#location">Lokasi</a>
+    <a href="https://wa.me/6281385130030" target="_blank" class="nm-wa">Reservasi WhatsApp</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="top" class="hero">
+  <div class="hero-bg">
+    <div class="hero-noise"></div>
+    <div class="hero-blob b1"></div>
+    <div class="hero-blob b2"></div>
+    <div class="hero-particles" id="particles"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag rv">Banjaran · Bandung</div>
+      <h1 class="hero-title">
+        <span class="rv" data-d="0">A Place</span>
+        <span class="rv italic" data-d="80">Where</span>
+        <span class="rv" data-d="160">Stories</span>
+        <span class="rv italic gold" data-d="240">Begin.</span>
+      </h1>
+      <p class="hero-sub rv" data-d="320">Coffee · Pastry · Videotron · Live Musik</p>
+      <div class="hero-actions rv" data-d="400">
+        <a href="https://wa.me/6281385130030" target="_blank" class="btn-wa">
+          <i class="ti ti-brand-whatsapp"></i> Reservasi Sekarang
+        </a>
+        <a href="#menu" class="btn-outline">Lihat Menu <i class="ti ti-arrow-down-right"></i></a>
+      </div>
+      <div class="hero-chips rv" data-d="500">
+        <div class="chip"><i class="ti ti-star-filled"></i> 5.0 Rating</div>
+        <div class="chip"><i class="ti ti-clock"></i> 11:00–22:00</div>
+        <div class="chip"><i class="ti ti-device-tv"></i> Videotron</div>
+      </div>
+    </div>
+    <div class="hero-right rv" data-d="200">
+      <div class="hero-img-frame">
+        <img src="assets/img5.jpg" alt="Interior Fable"/>
+        <div class="hero-img-tag">
+          <i class="ti ti-map-pin"></i> Jl. Raya Banjaran No.85
+        </div>
+      </div>
+      <div class="hero-float-a">
+        <span class="hf-num">5.0</span>
+        <span class="hf-label">Google Rating</span>
+        <div class="hf-stars">★★★★★</div>
+      </div>
+      <div class="hero-float-b">
+        <i class="ti ti-music"></i>
+        <span>Live Musik<br/>Tiap Minggu</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>scroll</span><div class="sh-line"></div>
+  </div>
+</section>
+
+<!-- ═══ MARQUEE ═══ -->
+<div class="marquee">
+  <div class="marquee-inner">
+    <span>Specialty Coffee</span><span class="sep">✦</span>
+    <span>Fresh Pastry</span><span class="sep">✦</span>
+    <span>Videotron Modern</span><span class="sep">✦</span>
+    <span>Live Musik</span><span class="sep">✦</span>
+    <span>Nonton Bareng</span><span class="sep">✦</span>
+    <span>Short Story Place</span><span class="sep">✦</span>
+    <span>Signature Fable</span><span class="sep">✦</span>
+    <span>Mont Blanc</span><span class="sep">✦</span>
+    <span>Specialty Coffee</span><span class="sep">✦</span>
+    <span>Fresh Pastry</span><span class="sep">✦</span>
+    <span>Videotron Modern</span><span class="sep">✦</span>
+    <span>Live Musik</span><span class="sep">✦</span>
+    <span>Nonton Bareng</span><span class="sep">✦</span>
+    <span>Short Story Place</span><span class="sep">✦</span>
+    <span>Signature Fable</span><span class="sep">✦</span>
+    <span>Mont Blanc</span><span class="sep">✦</span>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="s-about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-imgs">
+        <div class="ai-main rv" data-d="0">
+          <img src="assets/img2.jpg" alt="Suasana Fable"/>
+        </div>
+        <div class="ai-sub rv" data-d="100">
+          <img src="assets/img6.jpg" alt="Grand Opening"/>
+        </div>
+        <div class="ai-badge rv" data-d="200">
+          <span>⬡</span> Industrial Modern
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="s-label rv">Tentang Fable</p>
+        <h2 class="s-heading rv" data-d="80">
+          Lebih dari<br/><em>sekadar kopi.</em>
+        </h2>
+        <p class="about-body rv" data-d="160">Fable adalah ruang cerita di Banjaran, Bandung — tempat di mana setiap tegukan kopi membawa kenangan dan setiap sudut menginspirasi percakapan.</p>
+        <p class="about-body rv" data-d="220">Dengan interior industrial modern, videotron besar, dan live musik yang hangat setiap minggu — kami hadir sebagai <em>Short Story Place</em> untuk kisah harianmu.</p>
+        <div class="about-kpi rv" data-d="300">
+          <div class="kpi">
+            <strong>5.0</strong><span>Google Rating</span>
+          </div>
+          <div class="kpi-div"></div>
+          <div class="kpi">
+            <strong>7</strong><span>Ulasan</span>
+          </div>
+          <div class="kpi-div"></div>
+          <div class="kpi">
+            <strong>11–22</strong><span>Jam Buka</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VIBES ═══ -->
+<section class="s-vibes">
+  <div class="container">
+    <p class="s-label rv" style="text-align:center">Kenapa Fable</p>
+    <h2 class="s-heading rv center" data-d="80">Semua ada<br/><em>di sini.</em></h2>
+    <div class="vibes-grid">
+      <div class="vibe-card rv" data-d="0"><i class="ti ti-device-tv"></i><h3>Videotron</h3><p>Layar besar untuk nonton bola, film, atau event bareng.</p></div>
+      <div class="vibe-card rv" data-d="80"><i class="ti ti-music"></i><h3>Live Musik</h3><p>Penampilan musisi lokal dan event seru tiap minggu.</p></div>
+      <div class="vibe-card rv" data-d="160"><i class="ti ti-coffee"></i><h3>Specialty Coffee</h3><p>Kopi pilihan dengan teknik barista — bold, smooth, memorable.</p></div>
+      <div class="vibe-card rv" data-d="240"><i class="ti ti-bread"></i><h3>Fresh Pastry</h3><p>20+ jenis pastry fresh — croissant hingga Dubai Pistachio.</p></div>
+      <div class="vibe-card rv" data-d="320"><i class="ti ti-wifi"></i><h3>Free Wi-Fi</h3><p>Koneksi stabil buat kerja, belajar, atau konten kreator.</p></div>
+      <div class="vibe-card rv" data-d="400"><i class="ti ti-car"></i><h3>Parkir Luas</h3><p>Area parkir lega — datang rame-rame pun tetap nyaman.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRODUK UNGGULAN ═══ -->
+<section class="s-featured">
+  <div class="container">
+    <p class="s-label rv" style="text-align:center">Produk Unggulan</p>
+    <h2 class="s-heading rv center" data-d="80">Dua minuman<br/><em>yang selalu bikin rindu.</em></h2>
+  </div>
+  <div class="featured-scroll" id="featuredTrack">
+    <!-- Signature Fable -->
+    <div class="feat-card rv" data-d="0">
+      <div class="feat-img sig">
+        <img src="assets/signature.png" alt="Signature Fable"/>
+      </div>
+      <div class="feat-body">
+        <div class="feat-tag">⭐ Signature</div>
+        <h3>Signature Fable</h3>
+        <p>Espresso + Palm Sugar — bold, manis, dan khas Fable. Tersedia iced dan hot.</p>
+        <div class="feat-prices">
+          <div class="price-pill"><span>Jumbo</span><strong>Rp 35K</strong></div>
+          <div class="price-pill"><span>Fable Blend</span><strong>Rp 26K</strong></div>
+        </div>
+      </div>
+    </div>
+    <!-- Mont Blanc -->
+    <div class="feat-card rv" data-d="120">
+      <div class="feat-img mb">
+        <img src="assets/montblanc.png" alt="Mont Blanc"/>
+      </div>
+      <div class="feat-body">
+        <div class="feat-tag">✨ Premium</div>
+        <h3>Mont Blanc</h3>
+        <p>Fresh Milk + Espresso dengan topping cream manis — sensasi mewah di setiap tegukan.</p>
+        <div class="feat-prices">
+          <div class="price-pill"><span>Jumbo</span><strong>Rp 36K</strong></div>
+          <div class="price-pill"><span>Fable Blend</span><strong>Rp 28K</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MENU LENGKAP ═══ -->
+<section id="menu" class="s-menu">
+  <div class="container">
+    <p class="s-label rv" style="text-align:center">Menu Lengkap</p>
+    <h2 class="s-heading rv center" data-d="80">Pilihan untuk<br/><em>setiap selera.</em></h2>
+    <p class="menu-addr rv" data-d="120"><i class="ti ti-map-pin"></i> Jln Raya Banjaran No.85 · Telp. 0813-8913-003</p>
+
+    <!-- Tab buttons -->
+    <div class="menu-tabs rv" data-d="160">
+      <button class="mtab active" data-tab="coffee">☕ Coffee</button>
+      <button class="mtab" data-tab="noncoffee">🧋 Non-Coffee</button>
+      <button class="mtab" data-tab="pastry">🥐 Pastry</button>
+    </div>
+
+    <!-- COFFEE TAB -->
+    <div class="menu-panel active" id="tab-coffee">
+      <div class="menu-grid">
+        <div class="mi rv" data-d="0"><div class="mi-name">Cafe Latte <span class="mi-note">Ice/Hot</span></div><div class="mi-prices"><span>35K <small>Jumbo</small></span><span>28K <small>Blend</small></span></div><div class="mi-sub">Milk + Espresso</div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Caramel Macchiato <span class="mi-note">Iced</span></div><div class="mi-prices"><span>36K <small>Jumbo</small></span><span>28K <small>Blend</small></span></div><div class="mi-sub">Espresso + Caramel</div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Signature Fable <span class="mi-note">Ice/Hot</span></div><div class="mi-prices"><span>35K <small>Jumbo</small></span><span>26K <small>Blend</small></span></div><div class="mi-sub">Espresso + Palm Sugar</div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Cheese Latte <span class="mi-note">Ice/Hot</span></div><div class="mi-prices"><span>36K <small>Jumbo</small></span><span>28K <small>Blend</small></span></div><div class="mi-sub">Espresso + Cheese Cream</div></div>
+        <div class="mi rv" data-d="0"><div class="mi-name">Long Black <span class="mi-note">Ice/Hot</span></div><div class="mi-prices"><span>25K <small>Jumbo</small></span><span>18K <small>Blend</small></span></div><div class="mi-sub">Espresso</div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Cappuccino <span class="mi-note">Ice/Hot</span></div><div class="mi-prices"><span>35K <small>Jumbo</small></span><span>26K <small>Blend</small></span></div><div class="mi-sub">Milk + Espresso</div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Vanilla Latte <span class="mi-note">Ice/Hot</span></div><div class="mi-prices"><span>36K <small>Jumbo</small></span><span>28K <small>Blend</small></span></div><div class="mi-sub">Vanilla Syrup + Espresso</div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Manual Brew <span class="mi-note">Hot</span></div><div class="mi-prices"><span>25K <small>Jamrock</small></span></div><div class="mi-sub">Espresso</div></div>
+        <div class="mi rv" data-d="0"><div class="mi-name">Summer Punch <span class="mi-note">Ice</span></div><div class="mi-prices"><span>36K <small>Jumbo</small></span><span>28K <small>Blend</small></span></div><div class="mi-sub">Espresso + Lemon + Pineapple + Passion Fruit</div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Blueberry Sour Cream <span class="mi-note">Ice</span></div><div class="mi-prices"><span>42K <small>Jumbo</small></span><span>36K <small>Blend</small></span></div><div class="mi-sub">Blueberry + Espresso + Ice Milk</div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Butter Scotch <span class="mi-note">Ice</span></div><div class="mi-prices"><span>36K <small>Jumbo</small></span><span>28K <small>Blend</small></span></div><div class="mi-sub">Butterscotch + Espresso</div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Dirty Latte <span class="mi-note">Ice</span></div><div class="mi-prices"><span>36K <small>Jumbo</small></span><span>28K <small>Blend</small></span></div><div class="mi-sub">Fresh Milk + Espresso</div></div>
+        <div class="mi rv" data-d="0"><div class="mi-name">Mont Blanc</div><div class="mi-prices"><span>36K <small>Jumbo</small></span><span>28K <small>Blend</small></span></div><div class="mi-sub">Fresh Milk + Espresso</div></div>
+        <div class="mi rv mi-addon" data-d="40"><div class="mi-name">Extra Shot Arabica</div><div class="mi-prices"><span>5K</span></div></div>
+        <div class="mi rv mi-addon" data-d="80"><div class="mi-name">Extra Shot Fable Blend</div><div class="mi-prices"><span>4K</span></div></div>
+        <div class="mi rv mi-addon" data-d="120"><div class="mi-name">Oat Milk</div><div class="mi-prices"><span>6K</span></div></div>
+      </div>
+      <p class="menu-note rv">*Belum termasuk PPN 10%</p>
+    </div>
+
+    <!-- NON-COFFEE TAB -->
+    <div class="menu-panel" id="tab-noncoffee">
+      <div class="menu-grid">
+        <div class="mi rv" data-d="0"><div class="mi-name">Matcha Latte</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Matcha + Fresh Milk</div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Matcha Seasalt</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Matcha + Seasalt Cream</div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Matcha Cloud</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Matcha + Coconut Water</div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Matcha Berry</div><div class="mi-prices"><span>30K</span></div><div class="mi-sub">Matcha + Strawberry + Strawberry Pop + Caramel</div></div>
+        <div class="mi rv" data-d="0"><div class="mi-name">Choco Lava</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Cocoa + Espresso + Condensed Fresh Milk</div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Redmoon Kiss Mocha</div><div class="mi-prices"><span>30K</span></div><div class="mi-sub">Cocoa + Strawberry + Strawberry + Fresh Cream</div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Choco Cheese</div><div class="mi-prices"><span>35K</span></div><div class="mi-sub">Cocoa + Espresso + Cream Cheese + Condensed Milk</div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Pineapple Jealous</div><div class="mi-prices"><span>25K</span></div><div class="mi-sub">Pineapple + Lemon + Passionfruit + Soda</div></div>
+        <div class="mi rv" data-d="0"><div class="mi-name">Sunset Orange</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Orange + Vanilla + Fresh Milk</div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Passionfruit Punch</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Passionfruit Syrup + Mint + Soda + Lemon + Sliced</div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Grenadine Mojito</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Grenadine Syrup + Mint + Soda + Lemon + Sliced</div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Strawberry Mojito</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Strawberry Syrup + Mint + Soda + Lemon + Sliced</div></div>
+        <div class="mi rv" data-d="0"><div class="mi-name">Butterfly Honey Lemon</div><div class="mi-prices"><span>35K</span></div><div class="mi-sub">Butterfly Pea Tea + Lemon + Soda + Honey</div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Mojito Bluecuracao</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Curacao Syrup + Mint + Soda + Lemon + Sliced</div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Blueberry Cheesecake</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Preserved + Blueberry Syrup + Fresh Milk + Cheese</div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Tropical Berry</div><div class="mi-prices"><span>28K</span></div><div class="mi-sub">Passionfruit + Strawberry + Lemon + Soda</div></div>
+      </div>
+      <p class="menu-note rv">*Belum termasuk PPN 10%</p>
+    </div>
+
+    <!-- PASTRY TAB -->
+    <div class="menu-panel" id="tab-pastry">
+      <div class="menu-grid">
+        <div class="mi rv" data-d="0"><div class="mi-name">Butter Croissant</div><div class="mi-prices"><span>38K</span></div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Ham &amp; Cheese</div><div class="mi-prices"><span>42K</span></div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Choco Parmigiano</div><div class="mi-prices"><span>—</span></div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Dubai Pistachio</div><div class="mi-prices"><span>45K</span></div></div>
+        <div class="mi rv" data-d="0"><div class="mi-name">Double Cheese Croissant</div><div class="mi-prices"><span>—</span></div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Choco Brownies</div><div class="mi-prices"><span>16K</span></div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Blueberry Mochi</div><div class="mi-prices"><span>40K</span></div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Baked Almond</div><div class="mi-prices"><span>38K</span></div></div>
+        <div class="mi rv" data-d="0"><div class="mi-name">Blueberry Cheese</div><div class="mi-prices"><span>18K</span></div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Double Choco</div><div class="mi-prices"><span>18K</span></div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Choco Cheese</div><div class="mi-prices"><span>18K</span></div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Cranberry Cheese</div><div class="mi-prices"><span>18K</span></div></div>
+        <div class="mi rv" data-d="0"><div class="mi-name">Almond Cheese</div><div class="mi-prices"><span>18K</span></div></div>
+        <div class="mi rv" data-d="40"><div class="mi-name">Double Cheese Roti</div><div class="mi-prices"><span>18K</span></div></div>
+        <div class="mi rv" data-d="80"><div class="mi-name">Smoked Beef</div><div class="mi-prices"><span>18K</span></div></div>
+        <div class="mi rv" data-d="120"><div class="mi-name">Pizza Fable</div><div class="mi-prices"><span>18K</span></div></div>
+      </div>
+      <p class="menu-note rv">*Belum termasuk PPN 10%</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALLERY ═══ -->
+<section id="gallery" class="s-gallery">
+  <div class="container">
+    <p class="s-label rv" style="text-align:center">Galeri</p>
+    <h2 class="s-heading rv center" data-d="80">Suasana yang<br/><em>bikin betah.</em></h2>
+  </div>
+  <div class="gscroll-wrap rv" data-d="160">
+    <div class="gscroll-track" id="gTrack">
+      <div class="gslide"><img src="assets/img2.jpg" alt="Nonton Bareng"/><div class="gslide-label">Nonton Bareng</div></div>
+      <div class="gslide"><img src="assets/img3.jpg" alt="Live Musik"/><div class="gslide-label">Live Musik</div></div>
+      <div class="gslide"><img src="assets/img4.jpg" alt="Suasana Ramai"/><div class="gslide-label">Suasana Ramai</div></div>
+      <div class="gslide"><img src="assets/img5.jpg" alt="Interior Modern"/><div class="gslide-label">Interior Modern</div></div>
+      <div class="gslide"><img src="assets/img6.jpg" alt="Grand Opening"/><div class="gslide-label">Grand Opening</div></div>
+      <div class="gslide"><img src="assets/img7.jpg" alt="Fresh Pastry"/><div class="gslide-label">Fresh Pastry</div></div>
+    </div>
+    <button class="sarr sarr-l" id="gPrev"><i class="ti ti-chevron-left"></i></button>
+    <button class="sarr sarr-r" id="gNext"><i class="ti ti-chevron-right"></i></button>
+    <div class="sdots" id="gDots"></div>
+  </div>
+</section>
+
+<!-- ═══ REVIEWS ═══ -->
+<section id="reviews" class="s-reviews">
+  <div class="container">
+    <p class="s-label rv" style="text-align:center">Ulasan</p>
+    <h2 class="s-heading rv center" data-d="80">Kata mereka<br/><em>tentang Fable.</em></h2>
+    <div class="rating-band rv" data-d="160">
+      <div class="rb-score">5.0</div>
+      <div class="rb-right">
+        <div class="rb-stars">★★★★★</div>
+        <p>7 ulasan di Google</p>
+        <div class="rb-g">
+          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google Reviews
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rscroll-wrap rv" data-d="240">
+    <div class="rscroll-track" id="rTrack">
+      <div class="rcard"><div class="rc-head"><div class="rc-av" style="background:#4285F4">RH</div><div><div class="rc-name">Reza Hermawan</div><div class="rc-stars">★★★★★</div></div><svg class="rc-g" width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><p class="rc-text">"Tempatnya cozy banget! Videotron gede, cocok buat nonton bareng. Mont Blanc-nya recommended. Pasti balik lagi!"</p><span class="rc-tag">Nonton Bareng</span></div>
+      <div class="rcard"><div class="rc-head"><div class="rc-av" style="background:#34A853">SA</div><div><div class="rc-name">Sari Anggraini</div><div class="rc-stars">★★★★★</div></div><svg class="rc-g" width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><p class="rc-text">"Industrial modern, live musik asyik. Pastrynya fresh dan variatif. Harga terjangkau buat tempatnya yang sekeren ini!"</p><span class="rc-tag">Live Musik</span></div>
+      <div class="rcard"><div class="rc-head"><div class="rc-av" style="background:#EA4335">DK</div><div><div class="rc-name">Dian Kusuma</div><div class="rc-stars">★★★★★</div></div><svg class="rc-g" width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><p class="rc-text">"Signature Fable-nya juara! Event nonton Persib seru banget. Suasananya nagih, udah jadi langganan keluarga."</p><span class="rc-tag">Kopi</span></div>
+      <div class="rcard"><div class="rc-head"><div class="rc-av" style="background:#9e6a1a">AF</div><div><div class="rc-name">Andika Firmansyah</div><div class="rc-stars">★★★★★</div></div><svg class="rc-g" width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><p class="rc-text">"Dubai Pistachio Croissant-nya beda banget. Mont Blanc juga worth it. Tempat quality time terbaik sama keluarga!"</p><span class="rc-tag">Pastry</span></div>
+      <div class="rcard"><div class="rc-head"><div class="rc-av" style="background:#7a4c18">NF</div><div><div class="rc-name">Nita Fitriani</div><div class="rc-stars">★★★★★</div></div><svg class="rc-g" width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><p class="rc-text">"Baru buka langsung rame! Interior kece, kopi enak, pelayanan ramah. Jadi favorit kami sekarang."</p><span class="rc-tag">Keluarga</span></div>
+      <div class="rcard"><div class="rc-head"><div class="rc-av" style="background:#2c7be5">BW</div><div><div class="rc-name">Budi Wibowo</div><div class="rc-stars">★★★★★</div></div><svg class="rc-g" width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><p class="rc-text">"Tempat nongkrong terbaik di Banjaran! Atmosphere industrial-nya bikin betah. Cheese Latte-nya unexpectedly enak."</p><span class="rc-tag">Cheese Latte</span></div>
+      <div class="rcard"><div class="rc-head"><div class="rc-av" style="background:#e83e8c">LR</div><div><div class="rc-name">Lina Rahayu</div><div class="rc-stars">★★★★★</div></div><svg class="rc-g" width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><p class="rc-text">"Blueberry Sour Cream-nya unik banget! Suasana live musiknya bikin makin nyaman. Highly recommended buat date night!"</p><span class="rc-tag">Date Night</span></div>
+    </div>
+    <button class="sarr sarr-l" id="rPrev"><i class="ti ti-chevron-left"></i></button>
+    <button class="sarr sarr-r" id="rNext"><i class="ti ti-chevron-right"></i></button>
+    <div class="sdots" id="rDots"></div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="s-contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left rv">
+        <p class="s-label">Reservasi & Info</p>
+        <h2 class="s-heading">Siap bikin<br/><em>ceritamu dimulai?</em></h2>
+        <p class="contact-sub">Hubungi kami untuk reservasi meja, event private, atau sekadar tanya menu terbaru.</p>
+        <div class="cinfo-list">
+          <div class="cinfo"><i class="ti ti-map-pin"></i><div><strong>Alamat</strong><span>Jl. Raya Banjaran No.85, Banjaran, Kab. Bandung</span></div></div>
+          <div class="cinfo"><i class="ti ti-clock"></i><div><strong>Jam Buka</strong><span>Setiap Hari · 11:00 – 22:00 WIB</span></div></div>
+          <div class="cinfo"><i class="ti ti-phone"></i><div><strong>Telepon</strong><span>0813-8913-003</span></div></div>
+          <div class="cinfo"><i class="ti ti-brand-instagram"></i><div><strong>Instagram</strong><span>@fablecoffeeshop</span></div></div>
+        </div>
+      </div>
+      <div class="contact-right rv" data-d="160">
+        <div class="ccard">
+          <h3>Hubungi Kami</h3>
+          <p>Kami siap bantu kamu via WhatsApp — cepat dan ramah.</p>
+          <a href="https://wa.me/6281385130030" target="_blank" class="cta-wa"><i class="ti ti-brand-whatsapp"></i> Chat di WhatsApp</a>
+          <div class="cdiv"><span>atau</span></div>
+          <a href="https://maps.google.com/?q=Fable+Coffee+Banjaran+Bandung" target="_blank" class="cta-maps"><i class="ti ti-map-2"></i> Buka Google Maps</a>
+          <a href="https://www.instagram.com/fablecoffeeshop/" target="_blank" class="cta-ig"><i class="ti ti-brand-instagram"></i> Follow Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LOCATION ═══ -->
+<section id="location" class="s-location">
+  <div class="container">
+    <p class="s-label rv" style="text-align:center">Lokasi</p>
+    <h2 class="s-heading rv center" data-d="80">Temukan kami di<br/><em>Jl. Raya Banjaran No.85</em></h2>
+  </div>
+  <div class="map-wrap rv" data-d="160">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.519!2d107.5921!3d-7.0247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9b882cc78cd%3A0x1!2sJl.%20Raya%20Banjaran%20No.85%2C%20Banjaran%2C%20Kab.%20Bandung!5e0!3m2!1sid!2sid!4v1717200000000" width="100%" height="480" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Fable Coffee Location"></iframe>
+    <a href="https://maps.google.com/?q=Jl+Raya+Banjaran+No+85+Bandung" target="_blank" class="map-btn"><i class="ti ti-external-link"></i> Buka di Google Maps</a>
+  </div>
+  <div class="map-chips rv" data-d="240">
+    <div class="mchip"><i class="ti ti-map-pin"></i> Jl. Raya Banjaran No.85, Kab. Bandung</div>
+    <div class="mchip"><i class="ti ti-clock"></i> Setiap Hari · 11:00–22:00</div>
+    <div class="mchip"><i class="ti ti-car"></i> Parkir Luas</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="assets/logo.jpg" alt="Fable"/></div>
+        <div><strong>FABLE</strong><span>Short Story Place</span></div>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/fablecoffeeshop/" target="_blank"><i class="ti ti-brand-instagram"></i></a>
+        <a href="https://wa.me/6281385130030" target="_blank"><i class="ti ti-brand-whatsapp"></i></a>
+        <a href="https://maps.google.com/?q=Fable+Coffee+Banjaran+Bandung" target="_blank"><i class="ti ti-map-pin"></i></a>
+      </div>
+    </div>
+    <div class="footer-div"></div>
+    <div class="footer-bot">
+      <span>© 2026 Fable Coffee &amp; Pastry · Banjaran, Bandung</span>
+      <span>Made with ☕ &amp; passion</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/6281385130030" target="_blank" id="fwa" aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>Reservasi</span>
+</a>
+
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

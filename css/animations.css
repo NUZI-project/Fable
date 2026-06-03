@@ -1,0 +1,48 @@
+/* ══ animations.css ══ */
+
+/* Reveal base */
+.rv{opacity:0;transform:translateY(32px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s cubic-bezier(.25,.46,.45,.94)}
+.rv.in{opacity:1;transform:translateY(0)}
+
+/* Loader exit */
+@keyframes loaderExit{to{opacity:0;pointer-events:none}}
+#loader.out{animation:loaderExit .5s var(--ease,ease) forwards}
+#loader.gone{display:none}
+
+/* Shimmer on menu items */
+.mi{position:relative;overflow:hidden}
+.mi::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(196,154,74,.06),transparent);transform:skewX(-20deg);transition:none}
+.mi:hover::after{animation:miShimmer .5s ease forwards}
+@keyframes miShimmer{to{left:150%}}
+
+/* Tab panel fade */
+.menu-panel{animation:none}
+.menu-panel.active{animation:tabIn .35s ease forwards}
+@keyframes tabIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+/* Float cards hero */
+@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+
+/* WA pulse ring */
+#fwa{position:fixed}
+#fwa::before{content:'';position:absolute;inset:-4px;border-radius:50px;border:2px solid rgba(37,211,102,.45);animation:waPulse 2.5s ease-out infinite}
+@keyframes waPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.35);opacity:0}}
+
+/* Vibe card tilt vars */
+.vibe-card{transform-style:preserve-3d}
+
+/* Scroll progress width set via JS */
+
+/* Image load fade */
+img{transition:opacity .4s ease}
+img.loading{opacity:0}
+img.loaded{opacity:1}
+
+/* Lightbox */
+.lb-overlay{position:fixed;inset:0;background:rgba(28,18,8,.94);z-index:9999;display:flex;align-items:center;justify-content:center;animation:lbIn .25s ease forwards;cursor:zoom-out}
+@keyframes lbIn{from{opacity:0}to{opacity:1}}
+.lb-img{max-width:90vw;max-height:88vh;object-fit:contain;border-radius:16px;animation:lbImgIn .35s var(--ease,ease) forwards;cursor:default}
+@keyframes lbImgIn{from{transform:scale(.9)}to{transform:scale(1)}}
+.lb-close{position:absolute;top:20px;right:20px;width:40px;height:40px;border-radius:50%;background:rgba(196,154,74,.15);border:1px solid rgba(196,154,74,.25);color:#faf6ef;font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s}
+.lb-close:hover{background:rgba(196,154,74,.35);transform:rotate(90deg)}
